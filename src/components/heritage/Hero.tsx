@@ -1,4 +1,4 @@
-import heroImg from "@/assets/heritage/hero-monument.jpg";
+import heroImg from "@/assets/heritage/rajwada-palace-real.jpg";
 import { Particles } from "./Particles";
 import { GoldArch } from "./GoldArch";
 import { motion } from "framer-motion";
@@ -30,9 +30,23 @@ export function Hero() {
         <div className="flex items-center gap-4">
           <span className="h-px w-8 bg-gold/50" />
           <span className="font-body text-[0.68rem] tracking-royal uppercase text-gold-light/80">
-            Indore · Madhya Pradesh · 2025
+            Indore · Madhya Pradesh · 2026
           </span>
           <span className="h-px w-8 bg-gold/50" />
+        </div>
+      </motion.div>
+
+      {/* Official tagline banner */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.4, delay: 0.6 }}
+        className="relative z-10 flex justify-center px-6 mt-4"
+      >
+        <div className="border border-gold/30 bg-deep-brown/50 backdrop-blur-sm px-6 py-3 text-center max-w-2xl">
+          <p className="font-hindi text-gold-light text-sm md:text-base leading-relaxed">
+            माँ रेवा जैसी पावन लोकमाता देवी अहिल्या की जीवंत उपस्थिति का प्रांगण
+          </p>
         </div>
       </motion.div>
 
