@@ -1,26 +1,49 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/heritage/Hero";
+import { StatStrip } from "@/components/heritage/StatStrip";
+import { Biography } from "@/components/heritage/Biography";
+import { Timeline } from "@/components/heritage/Timeline";
+import { Vision } from "@/components/heritage/Vision";
+import { Zones } from "@/components/heritage/Zones";
+import { DigitalShowcase, AudioStory } from "@/components/heritage/DigitalSections";
+import { Trustees } from "@/components/heritage/Trustees";
+import {
+  SumitraSpotlight, SDG, CSR, Phases, Education, Circuit, Gallery, Contact, Footer,
+} from "@/components/heritage/Sections";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Devi Ahilyabai Holkar Smarak · Indore | A Living Heritage Memorial" },
+      { name: "description", content: "देवी अहिल्याबाई होलकर स्मारक — a ₹150 Cr cinematic heritage memorial in Indore reimagining 300 years of Lokmata Ahilyabai's legacy through 32 immersive experience zones." },
+      { property: "og:title", content: "Devi Ahilyabai Holkar Smarak · Indore" },
+      { property: "og:description", content: "Where History Lives Again — a national heritage initiative by the Ahilya Smarak Trust." },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="bg-background text-foreground overflow-x-hidden">
+      <Hero />
+      <StatStrip />
+      <Biography />
+      <Timeline />
+      <Vision />
+      <Zones />
+      <DigitalShowcase />
+      <AudioStory />
+      <Trustees />
+      <SumitraSpotlight />
+      <SDG />
+      <CSR />
+      <Phases />
+      <Education />
+      <Circuit />
+      <Gallery />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }
