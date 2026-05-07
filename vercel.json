@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
+  "nodeVersion": "20.x",
+  "framework": "vite",
+  "regions": ["iad"],
+  "env": {
+    "NODE_ENV": {
+      "value": "production"
+    }
+  }
+}
