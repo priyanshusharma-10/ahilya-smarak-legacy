@@ -2,6 +2,7 @@ import heroImg from "@/assets/heritage/rajwada-palace-real.jpg";
 import { Particles } from "./Particles";
 import { GoldArch } from "./GoldArch";
 import { motion } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 
 export function Hero() {
   return (
@@ -96,9 +97,9 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 1.5 }}
           className="flex flex-col sm:flex-row gap-4 items-center"
         >
-          <a href="#vision" className="btn-royal">Explore the Vision</a>
-          <a href="#zones" className="btn-ghost-royal">32 Experience Zones</a>
-          <a href="#csr" className="btn-ghost-royal">Become a Patron</a>
+          <Link to="/smarak" className="btn-royal">Explore the Vision</Link>
+          <Link to="/smarak" className="btn-ghost-royal">32 Experience Zones</Link>
+          <Link to="/trust" className="btn-ghost-royal">Become a Patron</Link>
         </motion.div>
       </div>
 

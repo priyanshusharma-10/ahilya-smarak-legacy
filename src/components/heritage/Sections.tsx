@@ -431,26 +431,21 @@ export function TrustDetails() {
             <div className="ornament-frame bg-secondary-bg/50 p-8 h-full">
               <p className="font-body text-[0.7rem] tracking-royal uppercase text-gold mb-5">Government Support</p>
               <ul className="space-y-4 font-body text-stone/80 text-sm leading-relaxed">
-                <li className="flex gap-3">
+                <li className="flex gap-3 items-start">
                   <span className="mt-1 w-1.5 h-1.5 shrink-0 bg-gold rotate-45" />
-                  Madhya Pradesh Government has <span className="text-gold-light ml-1">allotted land</span> at
-                  Rampur Kothi (7+ acres) for the memorial on Kesar Bagh Road, near Lalbagh Palace.
+                  <span>Madhya Pradesh Government has <span className="text-gold-light">allotted land</span> at Rampur Kothi (7+ acres) for the memorial on Kesar Bagh Road, near Lalbagh Palace.</span>
                 </li>
-                <li className="flex gap-3">
+                <li className="flex gap-3 items-start">
                   <span className="mt-1 w-1.5 h-1.5 shrink-0 bg-gold rotate-45" />
-                  Central Minister Shivraj Singh Chouhan and Chief Minister Dr. Mohan Yadav have extended
-                  <span className="text-gold-light ml-1">full cooperation</span> to the Smarak initiative.
+                  <span>Central Minister Shivraj Singh Chouhan and Chief Minister Dr. Mohan Yadav have extended <span className="text-gold-light">full cooperation</span> to the Smarak initiative.</span>
                 </li>
-                <li className="flex gap-3">
+                <li className="flex gap-3 items-start">
                   <span className="mt-1 w-1.5 h-1.5 shrink-0 bg-gold rotate-45" />
-                  Prime Minister Narendra Modi's reverence for Lokmata Ahilyabai is
-                  <span className="text-gold-light ml-1">well documented</span> — he has personally cited
-                  her governance as a model for modern India.
+                  <span>Prime Minister Narendra Modi's reverence for Lokmata Ahilyabai is <span className="text-gold-light">well documented</span> — he has personally cited her governance as a model for modern India.</span>
                 </li>
-                <li className="flex gap-3">
+                <li className="flex gap-3 items-start">
                   <span className="mt-1 w-1.5 h-1.5 shrink-0 bg-gold rotate-45" />
-                  Indore Municipal Corporation and District Collector are
-                  <span className="text-gold-light ml-1">represented on the Trust Board</span>.
+                  <span>Indore Municipal Corporation and District Collector are <span className="text-gold-light">represented on the Trust Board</span>.</span>
                 </li>
               </ul>
             </div>
