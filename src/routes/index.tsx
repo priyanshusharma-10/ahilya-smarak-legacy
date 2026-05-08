@@ -18,14 +18,6 @@ import {
 
 export const Route = createFileRoute("/")({
   component: Index,
-  head: () => ({
-    meta: [
-      { title: "Devi Ahilyabai Holkar Smarak · Indore | A Living Heritage Memorial" },
-      { name: "description", content: "देवी अहिल्याबाई होलकर स्मारक — a ₹150 Cr cinematic heritage memorial in Indore reimagining 300 years of Lokmata Ahilyabai's legacy through 32 immersive experience zones." },
-      { property: "og:title", content: "Devi Ahilyabai Holkar Smarak · Indore" },
-      { property: "og:description", content: "Where History Lives Again — a national heritage initiative by the Ahilya Smarak Trust." },
-    ],
-  }),
 });
 
 function Index() {
